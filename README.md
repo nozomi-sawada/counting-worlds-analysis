@@ -33,12 +33,6 @@ jupyter notebook demo.ipynb
 
 Nozomi Sawada / 澤田 望
 
-## Development / 開発
-
-This project was developed with assistance from Claude Sonnet 4.5 (Anthropic AI).
-
-本プロジェクトはClaude Sonnet 4.5 (Anthropic AI)の支援を受けて開発されました。
-
 ## License / ライセンス
 
 MIT License
