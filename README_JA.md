@@ -232,6 +232,12 @@ GitHub repository: https://github.com/nozomi-sawada/counting-worlds-analysis
 
 澤田 望 (Nozomi Sawada)
 
+## 開発
+
+本プロジェクトはClaude Sonnet 4.5 (Anthropic AI)の支援を受けて開発されました。
+
+This project was developed with assistance from Claude Sonnet 4.5 (Anthropic AI).
+
 ## 謝辞
 
 本研究はJSPS科研費19K13372およびJSPS科研費23H00013の助成を受けたものである。
