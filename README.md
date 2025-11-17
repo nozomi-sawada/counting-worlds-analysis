@@ -79,9 +79,16 @@ jupyter notebook Counting_Worlds_cleaned.ipynb
 サンプルデータですぐに動作確認できます：
 
 ```bash
-# デモノートブックを実行
-jupyter notebook demo.ipynb
+# デモノートブックを実行（言語を選択）
+jupyter notebook demo_en.ipynb  # English version
+jupyter notebook demo_ja.ipynb  # 日本語版
 ```
+
+**Language Versions / 言語版について:**
+- `demo_en.ipynb` - English version with detailed explanations of each cell's functionality
+- `demo_ja.ipynb` - 日本語版、各セルの機能について詳しい説明付き
+- Both notebooks contain identical functionality, only the language differs
+- どちらのノートブックも同じ機能を持ち、言語のみが異なります
 
 サンプルデータは `sample_data/` フォルダに含まれています：
 - `sample_editorial.csv` - 社説データのサンプル（5件）
@@ -91,15 +98,16 @@ jupyter notebook demo.ipynb
 
 ```
 counting-worlds-analysis/
-├── Counting_Worlds_cleaned.ipynb    # メイン分析ノートブック
-├── demo.ipynb                       # サンプルデータでのデモ
-├── README.md                        # プロジェクト説明
-├── requirements.txt                 # 必要パッケージ
-├── sample_data/                     # サンプルデータフォルダ
-│   ├── sample_editorial.csv         # 社説サンプル（5件）
-│   ├── sample_correspondence.csv    # 読者投稿サンプル（5件）
-│   └── README.md                    # サンプルデータ説明
-└── images/                          # 分析結果画像
+├── Counting_Worlds_cleaned.ipynb    # メイン分析ノートブック / Main analysis notebook
+├── demo_en.ipynb                    # デモノートブック（英語版） / Demo (English)
+├── demo_ja.ipynb                    # デモノートブック（日本語版） / Demo (Japanese)
+├── README.md                        # プロジェクト説明 / Project documentation
+├── requirements.txt                 # 必要パッケージ / Required packages
+├── sample_data/                     # サンプルデータフォルダ / Sample data folder
+│   ├── sample_editorial.csv         # 社説サンプル（5件） / Editorial samples (5)
+│   ├── sample_correspondence.csv    # 読者投稿サンプル（5件） / Correspondence samples (5)
+│   └── README.md                    # サンプルデータ説明 / Sample data documentation
+└── images/                          # 分析結果画像 / Analysis result images
     ├── 1_article_counts_by_year.png
     ├── 2_lagos_observer_wordcloud.png
     ├── 3_datasets_comparison_wordcloud.png
@@ -111,13 +119,13 @@ counting-worlds-analysis/
 本プロジェクトは異なる新聞形式に対応する統一データ読み込み関数を提供します：
 
 ```python
-# Counting_Worlds_cleaned.ipynbまたはdemo.ipynb内で定義済みの関数を使用
+# Counting_Worlds_cleaned.ipynb、demo_en.ipynb、またはdemo_ja.ipynb内で定義済みの関数を使用
 
 # 自動判定
 df = load_newspaper_data('your_data.csv')
 
 # 手動指定
-df = load_newspaper_data('your_data.csv', 
+df = load_newspaper_data('your_data.csv',
                         data_type='editorial',
                         data_source='Your Newspaper')
 ```
