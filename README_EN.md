@@ -232,6 +232,10 @@ GitHub repository: https://github.com/nozomi-sawada/counting-worlds-analysis
 
 Nozomi Sawada
 
+## Development
+
+This project was developed with assistance from Claude Sonnet 4.5 (Anthropic AI).
+
 ## Acknowledgments
 
 This work was supported by JSPS KAKENHI Grant Numbers 19K13372 and 23H00013.
