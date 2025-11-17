@@ -79,9 +79,15 @@ jupyter notebook Counting_Worlds_cleaned.ipynb
 You can immediately test the functionality with sample data:
 
 ```bash
-# Run the demo notebook
-jupyter notebook demo.ipynb
+# Run the demo notebook (choose your language)
+jupyter notebook demo_en.ipynb  # English version
+jupyter notebook demo_ja.ipynb  # Japanese version
 ```
+
+**Demo Notebooks:**
+- `demo_en.ipynb` - English version with detailed explanations of each cell's functionality
+- `demo_ja.ipynb` - Japanese version with detailed explanations of each cell's functionality
+- Both notebooks contain identical functionality, only the language differs
 
 Sample data is included in the `sample_data/` folder:
 - `sample_editorial.csv` - Editorial data sample (5 articles)
@@ -92,7 +98,8 @@ Sample data is included in the `sample_data/` folder:
 ```
 counting-worlds-analysis/
 ├── Counting_Worlds_cleaned.ipynb    # Main analysis notebook
-├── demo.ipynb                       # Demo with sample data
+├── demo_en.ipynb                    # Demo notebook (English)
+├── demo_ja.ipynb                    # Demo notebook (Japanese)
 ├── README.md                        # Language selection
 ├── README_EN.md                     # English README
 ├── README_JA.md                     # Japanese README
@@ -113,7 +120,7 @@ counting-worlds-analysis/
 This project provides a unified data loading function that supports different newspaper formats:
 
 ```python
-# Use the function defined in Counting_Worlds_cleaned.ipynb or demo.ipynb
+# Use the function defined in Counting_Worlds_cleaned.ipynb, demo_en.ipynb, or demo_ja.ipynb
 
 # Automatic detection
 df = load_newspaper_data('your_data.csv')

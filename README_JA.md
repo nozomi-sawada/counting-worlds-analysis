@@ -79,9 +79,15 @@ jupyter notebook Counting_Worlds_cleaned.ipynb
 サンプルデータですぐに動作確認できます：
 
 ```bash
-# デモノートブックを実行
-jupyter notebook demo.ipynb
+# デモノートブックを実行（言語を選択）
+jupyter notebook demo_en.ipynb  # 英語版
+jupyter notebook demo_ja.ipynb  # 日本語版
 ```
+
+**デモノートブック:**
+- `demo_en.ipynb` - 英語版、各セルの機能について詳しい説明付き
+- `demo_ja.ipynb` - 日本語版、各セルの機能について詳しい説明付き
+- どちらのノートブックも同じ機能を持ち、言語のみが異なります
 
 サンプルデータは `sample_data/` フォルダに含まれています：
 - `sample_editorial.csv` - 社説データのサンプル（5件）
@@ -92,7 +98,8 @@ jupyter notebook demo.ipynb
 ```
 counting-worlds-analysis/
 ├── Counting_Worlds_cleaned.ipynb    # メイン分析ノートブック
-├── demo.ipynb                       # サンプルデータでのデモ
+├── demo_en.ipynb                    # デモノートブック（英語版）
+├── demo_ja.ipynb                    # デモノートブック（日本語版）
 ├── README.md                        # 言語選択
 ├── README_EN.md                     # 英語版README
 ├── README_JA.md                     # 日本語版README
@@ -113,7 +120,7 @@ counting-worlds-analysis/
 本プロジェクトは異なる新聞形式に対応する統一データ読み込み関数を提供します：
 
 ```python
-# Counting_Worlds_cleaned.ipynbまたはdemo.ipynb内で定義済みの関数を使用
+# Counting_Worlds_cleaned.ipynb、demo_en.ipynb、またはdemo_ja.ipynb内で定義済みの関数を使用
 
 # 自動判定
 df = load_newspaper_data('your_data.csv')

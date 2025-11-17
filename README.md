@@ -25,9 +25,14 @@ This project provides Python code for text mining analysis of early Nigerian new
 # Install dependencies
 pip install -r requirements.txt
 
-# Run demo notebook with sample data
-jupyter notebook demo.ipynb
+# Run demo notebook with sample data (choose your language)
+jupyter notebook demo_en.ipynb  # English version
+jupyter notebook demo_ja.ipynb  # Japanese version
 ```
+
+**Demo Notebooks:**
+- `demo_en.ipynb` - English version with detailed explanations
+- `demo_ja.ipynb` - Japanese version with detailed explanations
 
 ## Author / 著者
 
@@ -39,12 +44,12 @@ This project was developed with assistance from Claude Sonnet 4.5 (Anthropic AI)
 
 本プロジェクトはClaude Sonnet 4.5 (Anthropic AI)の支援を受けて開発されました。
 
+---
+
 ## License / ライセンス
 
 MIT License
 
----
+See [README_EN.md](README_EN.md) or [README_JA.md](README_JA.md) for detailed documentation.
 
-For full documentation, please select your language above.
-
-詳細なドキュメントは上記から言語を選択してください。
+詳細なドキュメントは [README_EN.md](README_EN.md) または [README_JA.md](README_JA.md) をご覧ください。
