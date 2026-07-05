@@ -32,4 +32,5 @@ ipykernel>=6.15.0
 notebook>=6.4.0
 
 # Additional utilities
+openpyxl>=3.0.0
 python-dateutil>=2.8.2
