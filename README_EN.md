@@ -68,11 +68,17 @@ Key libraries:
 ## Usage
 
 1. Place data files in the `./data/` folder
-2. Launch Jupyter Notebook
+2. Launch Jupyter Notebook (choose your language)
 ```bash
-jupyter notebook Counting_Worlds_cleaned.ipynb
+jupyter notebook Counting_Worlds_en.ipynb  # English version
+jupyter notebook Counting_Worlds_ja.ipynb  # Japanese version
 ```
 3. Execute cells in order
+
+**Main Analysis Notebooks:**
+- `Counting_Worlds_en.ipynb` - English version (comments and output messages in English)
+- `Counting_Worlds_ja.ipynb` - Japanese version (comments and output messages in Japanese)
+- Both notebooks contain identical analysis code, only the language differs
 
 ## Quick Start
 
@@ -97,7 +103,8 @@ Sample data is included in the `sample_data/` folder:
 
 ```
 counting-worlds-analysis/
-├── Counting_Worlds_cleaned.ipynb    # Main analysis notebook
+├── Counting_Worlds_en.ipynb         # Main analysis notebook (English)
+├── Counting_Worlds_ja.ipynb         # Main analysis notebook (Japanese)
 ├── demo_en.ipynb                    # Demo notebook (English)
 ├── demo_ja.ipynb                    # Demo notebook (Japanese)
 ├── README.md                        # Language selection
@@ -120,7 +127,7 @@ counting-worlds-analysis/
 This project provides a unified data loading function that supports different newspaper formats:
 
 ```python
-# Use the function defined in Counting_Worlds_cleaned.ipynb, demo_en.ipynb, or demo_ja.ipynb
+# Use the function defined in Counting_Worlds_en.ipynb / Counting_Worlds_ja.ipynb, demo_en.ipynb, or demo_ja.ipynb
 
 # Automatic detection
 df = load_newspaper_data('your_data.csv')

@@ -68,11 +68,17 @@ pip install -r requirements.txt
 ## 使用方法
 
 1. データファイルを `./data/` フォルダに配置
-2. Jupyter Notebookを起動
+2. Jupyter Notebookを起動（言語を選択）
 ```bash
-jupyter notebook Counting_Worlds_cleaned.ipynb
+jupyter notebook Counting_Worlds_ja.ipynb  # 日本語版
+jupyter notebook Counting_Worlds_en.ipynb  # 英語版
 ```
 3. セルを順番に実行
+
+**メイン分析ノートブック:**
+- `Counting_Worlds_ja.ipynb` - 日本語版（コメント・出力メッセージが日本語）
+- `Counting_Worlds_en.ipynb` - 英語版（コメント・出力メッセージが英語）
+- どちらのノートブックも同じ分析コードを持ち、言語のみが異なります
 
 ## クイックスタート
 
@@ -97,7 +103,8 @@ jupyter notebook demo_ja.ipynb  # 日本語版
 
 ```
 counting-worlds-analysis/
-├── Counting_Worlds_cleaned.ipynb    # メイン分析ノートブック
+├── Counting_Worlds_ja.ipynb         # メイン分析ノートブック（日本語版）
+├── Counting_Worlds_en.ipynb         # メイン分析ノートブック（英語版）
 ├── demo_en.ipynb                    # デモノートブック（英語版）
 ├── demo_ja.ipynb                    # デモノートブック（日本語版）
 ├── README.md                        # 言語選択
@@ -120,7 +127,7 @@ counting-worlds-analysis/
 本プロジェクトは異なる新聞形式に対応する統一データ読み込み関数を提供します：
 
 ```python
-# Counting_Worlds_cleaned.ipynb、demo_en.ipynb、またはdemo_ja.ipynb内で定義済みの関数を使用
+# Counting_Worlds_ja.ipynb / Counting_Worlds_en.ipynb、demo_ja.ipynb / demo_en.ipynb内で定義済みの関数を使用
 
 # 自動判定
 df = load_newspaper_data('your_data.csv')
