@@ -175,12 +175,16 @@ Data format requirements:
 
 ## Outputs
 
-Analysis results are saved to the following folders:
-- `basic_stats/` - Basic statistics
-- `text_mining/` - Text mining results
-- `geographic_analysis/` - Geographic analysis
-- `pronoun_analysis/` - Pronoun analysis
-- `visualizations/` - Various graphs and charts
+Analysis results are automatically saved into dedicated folders per analysis (many folder names include a run timestamp). Main output locations include:
+
+- `dataset_basic_statistics_*/` - Basic dataset statistics (the Japanese notebook uses a Japanese folder name)
+- `geographical_analysis_*_<timestamp>/` - Geographical representation and co-occurrence network analyses
+- `corrected_native_analysis_results_<timestamp>/`, `final_native_analysis_<timestamp>/` - Temporal and consolidated "native" analyses
+- `context_analysis_output/` - Context analysis (Section 6)
+- `comprehensive_analysis_results_<timestamp>/` - Comprehensive report (5-5)
+- `analysis_results/` - Writing style and sentiment analysis results
+
+Each folder contains CSV files, PNG figures, and text/Markdown reports.
 
 ### Sample Results
 

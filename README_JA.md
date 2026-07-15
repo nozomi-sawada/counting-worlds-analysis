@@ -175,12 +175,16 @@ df = load_newspaper_data('your_data.csv',
 
 ## 出力結果
 
-分析結果は以下のフォルダに保存されます:
-- `basic_stats/` - 基礎統計
-- `text_mining/` - テキストマイニング結果
-- `geographic_analysis/` - 地理的分析
-- `pronoun_analysis/` - 代名詞分析
-- `visualizations/` - 各種グラフ・図表
+分析結果は、分析ごとの専用フォルダに自動保存されます（多くは実行日時付きのフォルダ名になります）。主な出力先の例:
+
+- `データセットの基本統計_*/` - データセットの基本統計（英語版ノートブックでは `dataset_basic_statistics_*/`）
+- `geographical_analysis_*_日時/` - 地理的表象・共起ネットワーク分析
+- `corrected_native_analysis_results_日時/`, `final_native_analysis_日時/` - nativeの時系列・統合分析
+- `context_analysis_output/` - 文脈分析（セクション6）
+- `comprehensive_analysis_results_日時/` - 総合レポート（5-5）
+- `analysis_results/` - 文体・感情分析の結果
+
+各フォルダにCSV・PNG・テキスト/Markdownレポートが保存されます。
 
 ### サンプル結果
 
