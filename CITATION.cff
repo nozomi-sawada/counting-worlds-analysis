@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "Counting Worlds: Text Mining Analysis of Early Nigerian Newspapers"
+authors:
+  - family-names: Sawada
+    given-names: Nozomi
+version: 1.0.0
+date-released: 2026-07-15
+repository-code: "https://github.com/nozomi-sawada/counting-worlds-analysis"
+license: MIT
+keywords:
+  - text mining
+  - digital humanities
+  - Nigerian newspapers
+  - colonial history
+  - Lagos Observer
+  - Lagos Weekly Record
+abstract: >-
+  Python code for text mining analysis of early Nigerian newspapers
+  (1880s-1930s) published in Lagos. It analyzes geographical
+  representations, collective identity, and discourse patterns during
+  the colonial period.

@@ -108,6 +108,7 @@ counting-worlds-analysis/
 ├── demo_en.ipynb                    # Demo notebook (English)
 ├── demo_ja.ipynb                    # Demo notebook (Japanese)
 ├── README.md                        # Language selection
+├── CITATION.cff                     # Citation metadata (Citation File Format)
 ├── README_EN.md                     # English README
 ├── README_JA.md                     # Japanese README
 ├── requirements.txt                 # Required packages
@@ -238,9 +239,12 @@ If you use this code, please cite it as follows:
 
 **In academic papers:**
 ```
-Sawada, N. (2025). Counting Worlds: Text Mining Analysis of Early Nigerian Newspapers.
-GitHub repository: https://github.com/nozomi-sawada/counting-worlds-analysis
+Sawada, N. (2026). Counting Worlds: Text Mining Analysis of Early Nigerian Newspapers
+(Version 1.0.0) [Computer software]. GitHub.
+https://github.com/nozomi-sawada/counting-worlds-analysis
 ```
+
+Citation metadata is also provided in `CITATION.cff` at the repository root. The "Cite this repository" button on the GitHub repository page generates APA and BibTeX citations from it automatically.
 
 ## Author
 
@@ -248,7 +252,7 @@ Nozomi Sawada
 
 ## Development
 
-This project was developed with assistance from Claude Sonnet 4.5 (Anthropic AI).
+This project was developed with assistance from Claude (Anthropic).
 
 ## Acknowledgments
 
